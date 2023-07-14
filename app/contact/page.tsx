@@ -8,13 +8,13 @@ const socials = [
   {
     icon: <Mail size={20} />,
     href: "mailto:clay03k@gmail.com",
-    label: "Email",
+    label: "email",
     handle: "clay03k@gmail.com",
   },
   {
     icon: <Github size={20} />,
     href: "https://github.com/clay-k0",
-    label: "Github",
+    label: "github",
     handle: "clay-k0",
   },
 ];
