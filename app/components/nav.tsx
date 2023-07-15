@@ -3,7 +3,7 @@ import { ArrowLeft } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
-import { cn } from "@/util/classnames";
+import { cn } from "@/util/cn";
 
 export const Navigation: React.FC = () => {
   const ref = useRef<HTMLElement>(null);
@@ -45,7 +45,7 @@ export const Navigation: React.FC = () => {
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-zinc-900/500  border-zinc-800 "
+            : "bg-zinc-900/500 border-zinc-800 "
         }`}
       >
         <div className='container flex flex-row-reverse items-center justify-between p-6 mx-auto'>
@@ -55,7 +55,7 @@ export const Navigation: React.FC = () => {
                 key={route.href}
                 href={route.href}
                 className={cn(
-                  "duration-200 text-zinc-400 hover:text-zinc-100",
+                  "duration-200 text-zinc-400 hover:text-zinc-100/90",
                   route.active ? "text-zinc-100" : "text-zinc-400"
                 )}
               >
