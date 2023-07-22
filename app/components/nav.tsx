@@ -42,10 +42,10 @@ export const Navigation: React.FC = () => {
   return (
     <header ref={ref}>
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur  duration-200 border-b  ${
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur duration-200 border-b  ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-zinc-900/500 border-zinc-800 "
+            : "bg-zinc-900/500 border-zinc-600 "
         }`}
       >
         <div className='container flex flex-row-reverse items-center justify-between p-6 mx-auto'>
@@ -55,8 +55,8 @@ export const Navigation: React.FC = () => {
                 key={route.href}
                 href={route.href}
                 className={cn(
-                  "duration-200 text-zinc-400 hover:text-zinc-100/90",
-                  route.active ? "text-zinc-100" : "text-zinc-400"
+                  "duration-200 text-zinc-400 hover:text-accent/80",
+                  route.active ? "text-accent" : "text-zinc-400"
                 )}
               >
                 {route.label}
@@ -66,9 +66,10 @@ export const Navigation: React.FC = () => {
 
           <Link
             href='/'
-            className='duration-200 text-zinc-300 hover:text-zinc-100'
+            className='duration-200 text-zinc-300 hover:text-accent flex '
           >
             <ArrowLeft className='w-6 h-6' />
+            back
           </Link>
         </div>
       </div>

@@ -8,10 +8,12 @@ import { Article } from "./article";
 export const revalidate = 60;
 export default async function ProjectsPage() {
   const featured = allProjects.find(
-    (project) => project.slug === "urbangoods"
+    (project) => project.slug === "next-urbangoods"
   )!;
-  const top2 = allProjects.find((project) => project.slug === "project")!;
-  const top3 = allProjects.find((project) => project.slug === "project2")!;
+  const top2 = allProjects.find(
+    (project) => project.slug === "html-portfoliov1"
+  )!;
+  const top3 = allProjects.find((project) => project.slug === "next-memento")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
@@ -35,10 +37,10 @@ export default async function ProjectsPage() {
             projects
           </h2>
           <p className='mt-4 text-zinc-400'>
-            feel free to reach out to me after checking out my projects!
+            here are some of the projects i've worked on
           </p>
         </div>
-        <div className='w-full h-px bg-zinc-800' />
+        <div className='w-full h-px bg-zinc-600' />
 
         <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 '>
           <Card>
@@ -53,7 +55,7 @@ export default async function ProjectsPage() {
                         }).format(new Date(featured.date))}
                       </time>
                     ) : (
-                      <span>soon</span>
+                      <span>wip</span>
                     )}
                   </div>
                 </div>
@@ -84,7 +86,7 @@ export default async function ProjectsPage() {
             ))}
           </div>
         </div>
-        <div className='hidden w-full h-px md:block bg-zinc-800' />
+        <div className='hidden w-full h-px md:block bg-zinc-600' />
 
         <div className='grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3'>
           <div className='grid grid-cols-1 gap-4'>

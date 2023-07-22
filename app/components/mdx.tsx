@@ -20,7 +20,7 @@ const components = {
   h2: ({ className, ...props }) => (
     <h2
       className={clsx(
-        "mt-10 scroll-m-20 border-b border-b-zinc-800 pb-1 text-3xl font-semibold tracking-tight first:mt-0",
+        "mt-10 scroll-m-20 border-b border-b-zinc-600 pb-1 text-3xl font-semibold tracking-tight first:mt-0",
         className
       )}
       {...props}
@@ -65,7 +65,7 @@ const components = {
   a: ({ className, ...props }) => (
     <Link
       className={clsx(
-        "font-medium text-zinc-900 underline underline-offset-4",
+        "font-medium text-zinc-900 no-underline hover:underline",
         className
       )}
       {...props}
@@ -89,7 +89,7 @@ const components = {
   blockquote: ({ className, ...props }) => (
     <blockquote
       className={clsx(
-        "mt-6 border-l-2 border-zinc-300 pl-6 italic text-zinc-800 [&>*]:text-zinc-600",
+        "mt-6 border-l-2 border-zinc-300 pl-6 italic text-zinc-600 [&>*]:text-zinc-600",
         className
       )}
       {...props}
@@ -145,7 +145,7 @@ const components = {
   pre: ({ className, ...props }) => (
     <pre
       className={clsx(
-        "mt-6 mb-4 overflow-x-auto rounded-lg bg-zinc-900 py-4",
+        "mt-6 mb-4 overflow-x-auto rounded-lg bg-custom-blue py-4",
         className
       )}
       {...props}
@@ -154,6 +154,7 @@ const components = {
   code: ({ className, ...props }) => (
     <code
       className={clsx(
+        // add custom theme for code blocks here
         "relative rounded border bg-zinc-300 bg-opacity-25 py-[0.2rem] px-[0.3rem] font-mono text-sm text-zinc-600",
         className
       )}

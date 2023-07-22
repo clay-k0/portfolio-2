@@ -1,5 +1,5 @@
 "use client";
-import { Github, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -17,14 +17,20 @@ const socials = [
     label: "github",
     handle: "clay-k0",
   },
+  {
+    icon: <Linkedin size={20} />,
+    href: "https://www.linkedin.com/in/clayton-king-8707a7270/",
+    label: "linkedin",
+    handle: "my linkedin",
+  },
 ];
 
-export default function Example() {
+export default function Contact() {
   return (
-    <div className=' bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0'>
+    <div className=' bg-gradient-to-tl from-custom-blue via-custom-blue to-custom-blue'>
       <Navigation />
       <div className='container flex items-center justify-center min-h-screen px-4 mx-auto'>
-        <div className='grid grid-cols-1 gap-8 mx-auto mt-2 sm:mt-0 sm:grid-cols-2 lg:gap-16'>
+        <div className='grid grid-cols-1 gap-8 mx-auto mt-2 sm:mt-0 sm:grid-cols-3 lg:gap-8'>
           {socials.map((s) => (
             <Card>
               <Link
@@ -36,7 +42,7 @@ export default function Example() {
                   className='absolute w-px h-2/3 bg-gradient-to-b from-zinc-500 via-zinc-500/50 to-transparent'
                   aria-hidden='true'
                 />
-                <span className='relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange'>
+                <span className='relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-custom-blue border-zinc-500 bg-custom-blue group-hover:border-zinc-200 drop-shadow-orange'>
                   {s.icon}
                 </span>{" "}
                 <div className='z-10 flex flex-col items-center'>

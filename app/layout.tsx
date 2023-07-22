@@ -2,12 +2,11 @@ import "../global.css";
 import { Inter } from "@next/font/google";
 import LocalFont from "@next/font/local";
 import { Metadata } from "next";
-import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "clay-k0 | web developer",
-    template: "%s | clay-k0",
+    default: `clay-k0 • home`,
+    template: "clay-k0 • %s",
   },
   description:
     "Computer science student and aspiring web developer from Virginia",
@@ -52,9 +51,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en' className={[inter.variable, calSans.variable].join(" ")}>
-      <head>
-        <Analytics />
-      </head>
       <body
         className={`bg-black ${
           process.env.NODE_ENV === "development" ? "debug-screens" : undefined

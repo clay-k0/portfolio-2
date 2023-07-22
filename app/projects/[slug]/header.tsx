@@ -11,6 +11,7 @@ type Props = {
     repository?: string;
   };
 };
+
 export const Header: React.FC<Props> = ({ project }) => {
   const ref = useRef<HTMLElement>(null);
   const [isIntersecting, setIntersecting] = useState(true);
@@ -18,16 +19,17 @@ export const Header: React.FC<Props> = ({ project }) => {
   const links: { label: string; href: string }[] = [];
   if (project.repository) {
     links.push({
-      label: "GitHub",
+      label: "source",
       href: `https://github.com/${project.repository}`,
     });
   }
   if (project.url) {
     links.push({
-      label: "Website",
+      label: "website",
       href: project.url,
     });
   }
+
   useEffect(() => {
     if (!ref.current) return;
     const observer = new IntersectionObserver(([entry]) =>
@@ -41,37 +43,27 @@ export const Header: React.FC<Props> = ({ project }) => {
   return (
     <header
       ref={ref}
-      className='relative isolate overflow-hidden bg-gradient-to-tl from-black via-zinc-900 to-black'
+      className='relative isolate overflow-hidden bg-gradient-to-tl bg-custom-blue'
     >
       <div
         className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
-            : "bg-white/10  border-zinc-200 lg:border-transparent"
+            : "bg-black/10  border-zinc-500 lg:border-transparent"
         }`}
       >
         <div className='container flex flex-row-reverse items-center justify-between p-6 mx-auto'>
           <div className='flex justify-between gap-8'>
             <Link target='_blank' href='https://github.com/clay-k0'>
-              <Github
-                className={`w-6 h-6 duration-200 hover:font-medium ${
-                  isIntersecting
-                    ? " text-zinc-400 hover:text-zinc-100"
-                    : "text-zinc-600 hover:text-zinc-900"
-                } `}
-              />
+              <Github className='w-6 h-6 duration-200 hover:font-medium text-zinc-400 hover:text-zinc-100' />
             </Link>
           </div>
-
           <Link
             href='/projects'
-            className={`duration-200 hover:font-medium ${
-              isIntersecting
-                ? " text-zinc-400 hover:text-zinc-100"
-                : "text-zinc-600 hover:text-zinc-900"
-            } `}
+            className='duration-200 hover:font-medium flex text-zinc-400 hover:text-zinc-100'
           >
-            <ArrowLeft className='w-6 h-6 ' />
+            <ArrowLeft className='w-6 h-6' />
+            back
           </Link>
         </div>
       </div>
@@ -81,16 +73,21 @@ export const Header: React.FC<Props> = ({ project }) => {
             <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl font-display'>
               {project.title}
             </h1>
-            <p className='mt-6 text-lg leading-8 text-zinc-300'>
+            <p className='mt-6 text-lg leading-8 text-zinc-400'>
               {project.description}
             </p>
           </div>
 
-          <div className='mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none'>
+          <div className='mx-auto mt-14 max-w-2xl lg:mx-0 lg:max-w-none'>
             <div className='grid grid-cols-1 gap-y-6 gap-x-8 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10'>
               {links.map((link) => (
-                <Link target='_blank' key={link.label} href={link.href}>
-                  {link.label} <span aria-hidden='true'>&rarr;</span>
+                <Link
+                  target='_blank'
+                  key={link.label}
+                  href={link.href}
+                  className='hover:underline'
+                >
+                  {link.label} &rarr;
                 </Link>
               ))}
             </div>

@@ -18,7 +18,7 @@ export const Article: React.FC<Props> = ({ project }) => {
                 )}
               </time>
             ) : (
-              <span>soon</span>
+              <span>wip</span>
             )}
           </span>
         </div>

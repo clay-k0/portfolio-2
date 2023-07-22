@@ -8,6 +8,22 @@
   }
 
   ::selection {
-    background-color: #ffffff2c;
+    background-color: #a3aac728;
   }
+
+  /* ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #252834;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #9a9ebb46;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c1c5e046;
+  } */
 }
