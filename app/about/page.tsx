@@ -21,7 +21,7 @@ export default function About() {
                   className='object-cover w-full h-full lg:border-r lg:border-zinc-600'
                 />
               </div>
-              <div className='relative flex flex-col justify-center px-6 py-10 pointer-events-none bg-custom-blue'>
+              <div className='relative flex flex-col justify-center px-6 py-10 bg-custom-blue'>
                 <div className='flex items-center mb-4'>
                   <h2 className='text-2xl font-bold text-zinc-200 mr-4'>
                     about
@@ -42,7 +42,7 @@ export default function About() {
                     family and friends, and cycling outside. if you ever want to
                     reach out or just chat, head to the{" "}
                     <Link
-                      className='text-white pointer-events-auto hover:underline'
+                      className='text-white hover:underline'
                       href='/contact'
                     >
                       contact
