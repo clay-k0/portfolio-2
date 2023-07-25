@@ -30,7 +30,7 @@ export default function About() {
                 </div>
                 <div className='relative'>
                   <p className='text-zinc-400 mb-6'>
-                    hey there! i'm clayton, a 20 year old computer science
+                    hey there! i'm clayton king, a 20 year old computer science
                     student who is also learning web development. i'm just about
                     a semester away from being a junior at old dominion
                     university, and i'm passionate about learning new
