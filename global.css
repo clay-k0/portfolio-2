@@ -8,7 +8,11 @@
   }
 
   ::selection {
-    background-color: #a3aac728;
+    background-color: #e3e3e328;
+  }
+
+  :focus {
+    outline: #adadad00 auto 1px;
   }
 
   /* ::-webkit-scrollbar {

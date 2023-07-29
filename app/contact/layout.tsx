@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default: `contact`,
-    template: "clay-k0 • %s",
+    template: "%s - CLAY KING",
   },
 };
 

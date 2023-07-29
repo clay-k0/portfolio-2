@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     default: `projects`,
-    template: "clay-k0 • %s",
+    template: "%s - CLAY KING",
   },
 };
 
@@ -13,7 +13,7 @@ export default function ProjectsLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className='relative min-h-screen bg-gradient-to-tl from-custom-blue via-custom-blue to-custom-blue'>
+    <div className='relative min-h-screen bg-gradient-to-tl bg-black'>
       {children}
     </div>
   );

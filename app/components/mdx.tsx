@@ -145,7 +145,7 @@ const components = {
   pre: ({ className, ...props }) => (
     <pre
       className={clsx(
-        "mt-6 mb-4 overflow-x-auto rounded-lg bg-custom-blue py-4",
+        "mt-6 mb-4 overflow-x-auto rounded-lg bg-neutral-900 py-4",
         className
       )}
       {...props}
@@ -154,7 +154,6 @@ const components = {
   code: ({ className, ...props }) => (
     <code
       className={clsx(
-        // add custom theme for code blocks here
         "relative rounded border bg-zinc-300 bg-opacity-25 py-[0.2rem] px-[0.3rem] font-mono text-sm text-zinc-600",
         className
       )}

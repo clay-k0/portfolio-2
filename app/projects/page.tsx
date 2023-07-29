@@ -33,21 +33,21 @@ export default async function ProjectsPage() {
       <Navigation />
       <div className='px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32'>
         <div className='max-w-2xl mx-auto lg:mx-0 pt-2'>
-          <h2 className='text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl'>
+          <h2 className='text-3xl font-bold tracking-tight sm:text-4xl text-white'>
             projects
           </h2>
-          <p className='mt-4 text-zinc-400'>
+          <p className='mt-4 text-zinc-400/80 font-light'>
             here are some of the projects i've worked on
           </p>
         </div>
-        <div className='w-full h-px bg-zinc-600' />
+        <div className='w-full h-px bg-zinc-700' />
 
         <div className='grid grid-cols-1 gap-8 mx-auto lg:grid-cols-2 '>
           <Card>
             <Link href={`/projects/${featured.slug}`}>
               <article className='relative w-full h-full p-4 md:p-8'>
                 <div className='flex items-center justify-between gap-2'>
-                  <div className='text-xs text-zinc-100'>
+                  <div className='text-xs text-zinc-100 font-light'>
                     {featured.date ? (
                       <time dateTime={new Date(featured.date).toISOString()}>
                         {Intl.DateTimeFormat(undefined, {
@@ -66,12 +66,15 @@ export default async function ProjectsPage() {
                 >
                   {featured.title}
                 </h2>
-                <p className='mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300'>
+                <p className='mt-4 leading-8 duration-150 text-zinc-400/80 group-hover:text-zinc-300 font-light'>
                   {featured.description}
                 </p>
                 <div className='absolute bottom-4 md:bottom-8'>
-                  <p className='hidden text-zinc-200 hover:text-zinc-50 lg:block'>
-                    read more <span aria-hidden='true'>&rarr;</span>
+                  <p className='hidden text-zinc-300 group-hover:text-zinc-50 lg:block font-light'>
+                    read more{" "}
+                    <span className='arrow' aria-hidden='true'>
+                      &rarr;
+                    </span>
                   </p>
                 </div>
               </article>
@@ -86,7 +89,7 @@ export default async function ProjectsPage() {
             ))}
           </div>
         </div>
-        <div className='hidden w-full h-px md:block bg-zinc-600' />
+        <div className='hidden w-full h-px md:block bg-zinc-700' />
 
         <div className='grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3'>
           <div className='grid grid-cols-1 gap-4'>

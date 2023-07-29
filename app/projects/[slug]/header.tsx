@@ -19,13 +19,13 @@ export const Header: React.FC<Props> = ({ project }) => {
   const links: { label: string; href: string }[] = [];
   if (project.repository) {
     links.push({
-      label: "source",
+      label: "Source",
       href: `https://github.com/${project.repository}`,
     });
   }
   if (project.url) {
     links.push({
-      label: "website",
+      label: "Website",
       href: project.url,
     });
   }
@@ -43,10 +43,10 @@ export const Header: React.FC<Props> = ({ project }) => {
   return (
     <header
       ref={ref}
-      className='relative isolate overflow-hidden bg-gradient-to-tl bg-custom-blue'
+      className='relative isolate overflow-hidden bg-gradient-to-tl bg-black'
     >
       <div
-        className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent ${
+        className={`fixed inset-x-0 top-0 z-50 backdrop-blur lg:backdrop-blur-none duration-200 border-b lg:bg-transparent font-light ${
           isIntersecting
             ? "bg-zinc-900/0 border-transparent"
             : "bg-black/10  border-zinc-500 lg:border-transparent"
@@ -55,12 +55,12 @@ export const Header: React.FC<Props> = ({ project }) => {
         <div className='container flex flex-row-reverse items-center justify-between p-6 mx-auto'>
           <div className='flex justify-between gap-8'>
             <Link target='_blank' href='https://github.com/clay-k0'>
-              <Github className='w-6 h-6 duration-200 hover:font-medium text-zinc-400 hover:text-zinc-100' />
+              <Github className='w-6 h-6 duration-200 hover:font-medium text-zinc-400/80 hover:text-zinc-100' />
             </Link>
           </div>
           <Link
             href='/projects'
-            className='duration-200 hover:font-medium flex text-zinc-400 hover:text-zinc-100'
+            className='duration-200 hover:font-medium flex text-zinc-400/80 hover:text-zinc-100'
           >
             <ArrowLeft className='w-6 h-6' />
             back
@@ -73,7 +73,7 @@ export const Header: React.FC<Props> = ({ project }) => {
             <h1 className='text-4xl font-bold tracking-tight text-white sm:text-6xl font-display'>
               {project.title}
             </h1>
-            <p className='mt-6 text-lg leading-8 text-zinc-400'>
+            <p className='mt-6 text-lg leading-8 text-zinc-400 font-light'>
               {project.description}
             </p>
           </div>
