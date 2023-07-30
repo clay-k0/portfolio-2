@@ -6,14 +6,13 @@ import { Card } from "../components/card";
 import { Article } from "./article";
 
 export const revalidate = 60;
+
 export default async function ProjectsPage() {
   const featured = allProjects.find(
-    (project) => project.slug === "next-urbangoods"
+    (project) => project.slug === "urbangoods"
   )!;
-  const top2 = allProjects.find(
-    (project) => project.slug === "html-portfoliov1"
-  )!;
-  const top3 = allProjects.find((project) => project.slug === "next-memento")!;
+  const top2 = allProjects.find((project) => project.slug === "portfoliov1")!;
+  const top3 = allProjects.find((project) => project.slug === "memento")!;
   const sorted = allProjects
     .filter((p) => p.published)
     .filter(
