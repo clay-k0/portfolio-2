@@ -13,8 +13,8 @@ export default function About() {
             <div className='relative flex items-center max-w-2xl mx-auto'>
               <Image
                 src='/me.jpg'
-                width={430}
-                height={430}
+                width={415}
+                height={415}
                 alt='image of me'
                 className='rounded-full'
               />
