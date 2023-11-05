@@ -13,8 +13,8 @@ export default function About() {
             <div className='relative flex items-center max-w-2xl mx-auto'>
               <Image
                 src='/me.jpg'
-                width={415}
-                height={415}
+                width={400}
+                height={400}
                 alt='image of me'
                 className='rounded-full'
               />
@@ -34,13 +34,12 @@ export default function About() {
                   hey there! i'm clayton, but you can call me clay. i'm a 20
                   year old computer science at old dominion university. i've
                   been learning web development in my free time, and i'm
-                  passionate about learning new tech and building things that
-                  solve real world problems. when it comes to
-                  libraries/frameworks, i'm most familiar with react and
-                  next.js. other than programming, i enjoy listening to music,
-                  collecting vinyl, spending time with family and friends, and
-                  cycling outdoors. if you want to reach out or just chat, head
-                  to the{" "}
+                  passionate about new tech and building things that solve real
+                  world problems. when it comes to libraries/frameworks, i'm
+                  most familiar with react and next.js. other than programming,
+                  i enjoy listening to music, collecting vinyl, spending time
+                  with family and friends, and cycling outdoors. if you want to
+                  reach out or just chat, head to the{" "}
                   <Link className='text-white hover:underline' href='/contact'>
                     contact
                   </Link>{" "}
