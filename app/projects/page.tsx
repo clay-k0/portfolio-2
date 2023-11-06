@@ -9,7 +9,7 @@ export const revalidate = 60;
 
 export default async function ProjectsPage() {
   const featured = allProjects.find((project) => project.slug === "project5")!;
-  const top2 = allProjects.find((project) => project.slug === "portfoliov1")!;
+  const top2 = allProjects.find((project) => project.slug === "ematchi")!;
   const top3 = allProjects.find((project) => project.slug === "memento")!;
   const sorted = allProjects
     .filter((p) => p.published)
@@ -63,10 +63,10 @@ export default async function ProjectsPage() {
                 >
                   {featured.title}
                 </h2>
-                <p className='mt-4 leading-8 duration-150 text-zinc-400/80 group-hover:text-zinc-300 font-light'>
+                <p className='mt-4 mb-2 leading-8 duration-150 text-zinc-400/80 group-hover:text-zinc-300 font-light'>
                   {featured.description}
                 </p>
-                <div className='absolute bottom-4 md:bottom-8'>
+                <div className='bottom-4 md:bottom-8'>
                   <p className='hidden text-zinc-300 group-hover:text-zinc-50 lg:block font-light'>
                     read more{" "}
                     <span className='arrow' aria-hidden='true'>

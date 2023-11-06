@@ -12,7 +12,7 @@ export default function About() {
           <div className='grid grid-cols-1 md:grid-cols-2 gap-1 bg-black'>
             <div className='relative flex items-center max-w-2xl mx-auto'>
               <Image
-                src='/me.jpg'
+                src='/me.webp'
                 width={400}
                 height={400}
                 alt='image of me'
