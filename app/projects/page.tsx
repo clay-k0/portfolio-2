@@ -63,7 +63,7 @@ export default async function ProjectsPage() {
                 >
                   {featured.title}
                 </h2>
-                <p className='mt-4 mb-2 leading-8 duration-150 text-zinc-400/80 group-hover:text-zinc-300 font-light'>
+                <p className='mt-4 mb-5 leading-8 duration-150 text-zinc-400/80 group-hover:text-zinc-300 font-light'>
                   {featured.description}
                 </p>
                 <div className='bottom-4 md:bottom-8'>
@@ -117,6 +117,7 @@ export default async function ProjectsPage() {
               ))}
           </div>
         </div>
+        <div className='w-full h-px bg-zinc-700' />
       </div>
     </div>
   );
