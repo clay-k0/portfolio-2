@@ -70,8 +70,7 @@ export const Navigation: React.FC = () => {
             href='/'
             className='duration-200 text-zinc-400/80 hover:text-accent flex font-light'
           >
-            <ArrowLeft className='w-6 h-6' />
-            back
+            {"<-"} home
           </Link>
         </div>
       </div>
