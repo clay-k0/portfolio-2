@@ -32,14 +32,14 @@ export default function About() {
               <div className='relative'>
                 <p className='text-zinc-400/80 mb-6 font-light'>
                   Hey there! I'm Clayton, but you can call me Clay. I'm a 20-
-                  year-old pursuing a computer science major and cybersecurity
-                  minor at old dominion university. Outside of school, I've been
-                  learning a bit of web development and some languages like
-                  Python, Rust, and Go. I'm passionate about discovering new
-                  technology and building things with code. Other than
-                  programming, I enjoy listening to music, collecting vinyl,
-                  spending time with family and friends, and cycling outdoors.
-                  If you want to reach out or just chat, head to the{" "}
+                  year-old computer science major and cybersecurity minor at Old
+                  Dominion University. Outside of school, I've been learning a
+                  bit of web development and some languages like Python, Rust,
+                  and Go. I'm passionate about discovering new technology and
+                  building things with code. Other than programming, I enjoy
+                  listening to music, collecting vinyl, spending time with
+                  family and friends, and cycling outdoors. If you want to reach
+                  out or just chat, head to the{" "}
                   <Link className='text-white hover:underline' href='/contact'>
                     contact
                   </Link>{" "}
