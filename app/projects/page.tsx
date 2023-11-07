@@ -31,10 +31,10 @@ export default async function ProjectsPage() {
       <div className='px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32'>
         <div className='max-w-2xl mx-auto lg:mx-0 pt-2'>
           <h2 className='text-3xl font-bold tracking-tight sm:text-4xl text-white'>
-            projects
+            Projects
           </h2>
           <p className='mt-4 text-zinc-400/80 font-light'>
-            here are some of the projects i've worked on
+            Here are some of the projects I've worked on.
           </p>
         </div>
         <div className='w-full h-px bg-zinc-700' />
@@ -68,7 +68,7 @@ export default async function ProjectsPage() {
                 </p>
                 <div className='bottom-4 md:bottom-8'>
                   <p className='hidden text-zinc-300 group-hover:text-zinc-50 lg:block font-light'>
-                    read more{" "}
+                    Read More{" "}
                     <span className='arrow' aria-hidden='true'>
                       &rarr;
                     </span>

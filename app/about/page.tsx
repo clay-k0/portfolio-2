@@ -22,7 +22,7 @@ export default function About() {
             <div className='relative flex flex-col justify-center px-6 py-10 bg-black'>
               <div className='flex items-center mb-4'>
                 <h2 className='text-2xl font-bold text-zinc-200 mr-4'>
-                  about me
+                  About Me
                   {/* <span className='text-zinc-500 text-xl font-medium ml-4'>
                     he/him
                   </span> */}
@@ -31,19 +31,19 @@ export default function About() {
               </div>
               <div className='relative'>
                 <p className='text-zinc-400/80 mb-6 font-light'>
-                  hey there! i'm clayton, but you can call me clay. i'm a 20
-                  year old computer science at old dominion university. i've
-                  been learning web development in my free time, and i'm
-                  passionate about new tech and building things that solve real
-                  world problems. when it comes to libraries/frameworks, i'm
-                  most familiar with react and next.js. other than programming,
-                  i enjoy listening to music, collecting vinyl, spending time
-                  with family and friends, and cycling outdoors. if you want to
-                  reach out or just chat, head to the{" "}
+                  Hey there! I'm Clayton, but you can call me Clay. I'm a 20-
+                  year-old pursuing a computer science major and cybersecurity
+                  minor at old dominion university. Outside of school, I've been
+                  learning a bit of web development and some languages like
+                  Python, Rust, and Go. I'm passionate about discovering new
+                  technology and building things with code. Other than
+                  programming, I enjoy listening to music, collecting vinyl,
+                  spending time with family and friends, and cycling outdoors.
+                  If you want to reach out or just chat, head to the{" "}
                   <Link className='text-white hover:underline' href='/contact'>
                     contact
                   </Link>{" "}
-                  page and send me an email; i'm always looking for
+                  page and send me an email; I'm always looking for
                   opportunities to learn and grow as a developer.
                 </p>
               </div>

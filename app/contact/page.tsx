@@ -8,20 +8,20 @@ const socials = [
   {
     icon: <Mail size={20} />,
     href: "mailto:clay03k@gmail.com",
-    label: "email",
+    label: "Email",
     handle: "clay03k@gmail.com",
   },
   {
     icon: <Github size={20} />,
     href: "https://github.com/clay-k0",
-    label: "github",
+    label: "Github",
     handle: "clay-k0",
   },
   {
     icon: <Linkedin size={20} />,
     href: "https://www.linkedin.com/in/clayton-king-8707a7270/",
-    label: "linkedin",
-    handle: "linkedin",
+    label: "LinkedIn",
+    handle: "My LinkedIn",
   },
 ];
 

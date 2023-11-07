@@ -14,17 +14,17 @@ export const Navigation: React.FC = () => {
   const routes = [
     {
       href: `/projects`,
-      label: "projects",
+      label: "Projects",
       active: pathname === `/projects`,
     },
     {
       href: `/about`,
-      label: "about",
+      label: "About",
       active: pathname === `/about`,
     },
     {
       href: `/contact`,
-      label: "contact",
+      label: "Contact",
       active: pathname === `/contact`,
     },
   ];
@@ -70,7 +70,7 @@ export const Navigation: React.FC = () => {
             href='/'
             className='duration-200 text-zinc-400/80 hover:text-accent flex font-light'
           >
-            {"<-"} home
+            {"<-"} Home
           </Link>
         </div>
       </div>
