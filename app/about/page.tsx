@@ -33,18 +33,19 @@ export default function About() {
                 <p className='text-zinc-400/80 mb-6 font-light'>
                   Hey there! I'm Clayton, but you can call me Clay. I'm a 20-
                   year-old computer science major and cybersecurity minor at Old
-                  Dominion University. Outside of school, I've been learning a
-                  bit of web development and some languages like Python, Rust,
-                  and Go. I'm passionate about discovering new technology and
-                  building things with code. Other than programming, I enjoy
-                  listening to music, collecting vinyl, spending time with
-                  family and friends, and cycling outdoors. If you want to reach
-                  out or just chat, head to the{" "}
+                  Dominion University. I've been learning a bit of web
+                  development and some languages like Python, C, and C++. I'm
+                  passionate about discovering new technology and building
+                  things with code. Other than programming, I enjoy listening to
+                  music, collecting vinyl, spending time with family and
+                  friends, and cycling outdoors. If you want to reach out or
+                  just chat, head to the{" "}
                   <Link className='text-white hover:underline' href='/contact'>
                     contact
                   </Link>{" "}
                   page and send me an email; I'm always looking for
-                  opportunities to learn and grow as a developer.
+                  opportunities to learn and grow as a developer. Thanks for
+                  stopping by!
                 </p>
               </div>
             </div>
